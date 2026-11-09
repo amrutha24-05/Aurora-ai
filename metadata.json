@@ -1,0 +1,6 @@
+{
+  "name": "Aurora AI",
+  "description": "Multilingual multi-agent intelligence platform for Indian languages with voice interaction, specialized agents, and RAG retrieval.",
+  "requestFramePermissions": ["microphone"],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

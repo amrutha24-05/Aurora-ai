@@ -1,0 +1,83 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Plus Jakarta Sans", system-ui, -apple-system, sans-serif;
+  --font-display: "Outfit", system-ui, -apple-system, sans-serif;
+  --font-mono: "JetBrains Mono", monospace;
+
+  /* Primary Palette */
+  --color-warm-ivory: #F7F8F2;
+  --color-soft-white: #FFFFFF;
+  --color-pastel-sage: #A8C3A0;
+  --color-forest-green: #527653;
+  --color-deep-forest: #26382D;
+  --color-muted-sage: #788579;
+
+  /* Secondary Palette */
+  --color-apricot: #F4B183;
+  --color-soft-tangerine: #E99A61;
+  --color-pale-peach: #FBE5D4;
+  --color-cream-yellow: #F5EBC7;
+
+  /* Supporting Surfaces & Borders */
+  --color-pale-green-surface: #EEF3EA;
+  --color-light-green-border: #E3EADF;
+  --color-muted-text: #899287;
+  --color-soft-grey: #F0F1EC;
+  --color-success-green: #62966A;
+  --color-warning-orange: #D99450;
+  --color-error-red: #CF7770;
+}
+
+:root {
+  color-scheme: light;
+}
+
+body {
+  font-family: var(--font-sans);
+  background-color: #F7F8F2;
+  color: #26382D;
+  overflow-x: hidden;
+}
+
+h1, h2, h3, .font-display {
+  font-family: var(--font-display);
+}
+
+/* Subtle Aurora Pastel Background Mesh */
+.aurora-nature-mesh {
+  background-image: 
+    radial-gradient(at 0% 0%, rgba(168, 195, 160, 0.28) 0px, transparent 50%),
+    radial-gradient(at 100% 0%, rgba(244, 177, 131, 0.22) 0px, transparent 50%),
+    radial-gradient(at 50% 100%, rgba(251, 229, 212, 0.35) 0px, transparent 60%);
+}
+
+/* Gentle Soft Shadows */
+.aurora-soft-shadow {
+  box-shadow: 0 4px 20px -2px rgba(38, 56, 45, 0.05), 0 2px 6px -1px rgba(38, 56, 45, 0.03);
+}
+
+.aurora-card-hover {
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.aurora-card-hover:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 30px -4px rgba(38, 56, 45, 0.08);
+}
+
+/* Clean, Minimalist Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #F7F8F2;
+}
+::-webkit-scrollbar-thumb {
+  background: #E3EADF;
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #A8C3A0;
+}
